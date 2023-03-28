@@ -26,10 +26,10 @@ class Level:
 						x = col_index * TILESIZE
 						y = row_index * TILESIZE
 						if style == 'boundry':
-							Tile((x,y), [self.obstacle_sprites], 'invisible')
-		# 		if col == 'x':
-		# 			Tile((x,y),[self.visible_sprites,self.obstacle_sprites])
-		# 		if col == 'p':
+							Tile((x,y), [self.visible_sprites,self.obstacle_sprites], 'invisible')
+		 	#	if col == 'x':
+		 			#Tile((x,y),[self.visible_sprites,self.obstacle_sprites])
+		 		#if col == 'p':
 		self.player = Player((1500,720),[self.visible_sprites],self.obstacle_sprites)
 
 	def run(self):
